@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-3">
+    <h2>水平排列子元素</h2>
+    <p>使用 .flex-row 标记容器为行模块</p>
+    <div class="d-flex flex-row bg-secondary mb-3">
+        <div class="p-2 bg-info">item 1 </div>
+        <div class="p-2 bg-info">item 2 </div>
+        <div class="p-2 bg-info">item 3 </div>
+    </div>
+    <div class="d-flex flex-row-reverse bg-secondary mb-3">
+        <div class="p-2 bg-info">item 1 </div>
+        <div class="p-2 bg-info">item 2 </div>
+        <div class="p-2 bg-info">item 3 </div>
+    </div>
+
+    <h2>垂直排列子元素</h2>
+    <p>使用 .flex-column 标记容器为列模块</p>
+    <div class="d-flex flex-column bg-secondary mb-3">
+        <div class="p-2 bg-info">item 1 </div>
+        <div class="p-2 bg-info">item 2 </div>
+        <div class="p-2 bg-info">item 3 </div>
+    </div>
+
+    <h2>子元素之间边距排列</h2>
+    <p>使用 .mr-auto .ml-auto 向右向左</p>
+    <p>使用 .flex-grow-1 子元素利用 div 剩余空间</p>
+    <p>使用 .border 为子元素添加边框</p>
+    <div class="d-flex mb-3 ">
+        <div class="p-2 border ">item 1 </div>
+        <div class="p-2 border">item 2 </div>
+        <div class="p-2 flex-grow-1 bg-info">item 3 </div>
+    </div>
+
+
+    <p>使用 .align-self-* 来设置子元素内容的自对齐</p>
+    <div class="d-flex bg-light" style="height:100px">
+        <div class="p-2 border align-self-start">Flex item 1</div>
+        <div class="p-2 border align-self-center">Flex item 2</div>
+        <div class="p-2 border align-self-end">Flex item 3</div>
+        <div class="p-2 border align-self-baseline">Flex item 2</div>
+    </div>
+
+    <p>使用 .align-items-* 设置单行 div 元素在父容器中的对齐方式</p>
+    <div class="d-flex bg-light align-items-center" style="height:100px">
+        <div class="p-2 border">Flex item1</div>
+        <div class="p-2 border">Flex item2</div>
+        <div class="p-2 border">Flex item3</div>
+    </div>
+
+    <p>使用 .align-content-* 设置子元素在容器中的对齐方式</p>
+    <div class="d-flex bg-light flex-wrap align-content-end" style="height:50px">
+        <div class="p-2 border">Flex item1</div>
+        <div class="p-2 border">Flex item2</div>
+        <div class="p-2 border">Flex item3</div>
+    </div>
+</div>
+</body>
+</html>
